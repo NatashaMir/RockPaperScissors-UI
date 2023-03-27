@@ -1,0 +1,13 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin: 50px;
+}
+
+.child {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+  }
