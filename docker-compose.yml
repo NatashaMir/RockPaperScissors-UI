@@ -1,0 +1,15 @@
+version: '3'
+
+networks:
+  rps-network-compose-ui:
+
+services:
+  rock-paper-scissors-ui:
+    image: rock-paper-scissors-ui
+    build:
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    restart: always
+    networks:
+      - rps-network-compose-ui
