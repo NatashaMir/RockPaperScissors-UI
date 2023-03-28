@@ -1,18 +1,18 @@
 import Head from "next/head";
-import {StatisticTable} from "@/app/components/RockPaperScissors/Statistic";
+import {GameComponent} from "@/app/components/RockPaperScissors/Game";
 import Link from "@mui/material/Link";
 
 
-export default function statistic() {
+export default function game() {
     return (
         <>
             <Head>
                 <title>Rock-Paper-Scissors Game</title>
             </Head>
             <div>
-                <StatisticTable />
-                <Link href="/game" underline="none">
-                    Show Game
+                <GameComponent />
+                <Link href="/statistic" underline="none">
+                    Show statistic
                 </Link>
             </div>
         </>
